@@ -1,0 +1,416 @@
+html, body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222831;
+    margin: 0;
+    height: 100%;
+}
+
+
+.logoContainer {
+    /* Auto Layout */
+font-family: 'Montserrat', sans-serif;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 119px;
+height: 54px;
+left: 20px;
+top: 20px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 10px;
+}
+
+.logo {
+    position: static;
+    left: 0%;
+    right: 54.62%;
+    top: 0%;
+    bottom: 0%;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.logoText {
+    position: static;
+left: 53.78%;
+right: 0%;
+top: 9.26%;
+bottom: 9.26%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.03em;
+
+/* Акцент */
+
+color: #29A19C;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 10px;
+
+}
+
+/* Регистрация/вход */
+
+.RegContainer {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+
+position: absolute;
+width: 350px;
+height: 375px;
+left: calc(50% - 350px/2);
+top: calc(50% - 375px/2 + 0.5px);
+
+/* Темная тема/Карточка */
+
+background: #2C3440;
+box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.RegContainer .Text {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 310px;
+    height: 25px;
+    left: 20px;
+    top: 20px;
+    
+    /* Акцент */
+
+color: #29A19C;
+font-style: normal;
+font-size: 20px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 20px 10px;
+}
+
+
+.RegContainer .Input 
+{
+    /* Контент */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+position: static;
+width: 310px;
+height: 290px;
+left: 20px;
+top: 65px;
+}
+
+.RegContainer .Input input {
+    /* Auto Layout */
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px 15px;
+
+position: static;
+width: 310px;
+height: 39px;
+left: 0px;
+top: 0px;
+
+border: 3px solid #29A19C;
+box-sizing: border-box;
+border-radius: 8px;
+background: #2C3440;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 15px 0px;
+
+}
+
+.RegContainer .Input button {
+
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px 25px;
+
+position: static;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #29A19C;
+border-radius: 8px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 20px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+/* Темная тема/Белый */
+
+color: #F9F9F9;
+
+
+   
+}
+.RegContainer .Registr{
+
+    /* Еще нет аккаунта? Регистрация */
+
+position: static;
+width: 179px;
+height: 16px;
+left: 65.5px;
+top: 180px;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.01em;
+white-space: nowrap;
+
+color: #CECECE;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 3;
+flex-grow: 0;
+margin: 30px 0px;
+}
+
+.RegContainer  .Registr a {
+
+    color: #29A19C;
+    text-decoration: none;
+    
+}
+
+.RegContainer  .Registr a:hover {
+
+    color: #29A19C;
+    text-decoration: underline;
+    
+}
+
+
+
+.navigation {
+    /* Auto Layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     
+    position: absolute;
+    width: 1440px;
+    height: 64px;
+    left: 0px;
+    top: 90%;
+    
+    }
+
+.navigation ul {
+    color: #CECECE;
+    list-style: none;
+    
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: pre;
+    max-width: 100%;
+}
+
+.navigation ul li  {
+    color: #CECECE;
+    padding: 5px;
+}
+.navigation ul li a {
+    color: #CECECE;
+    text-decoration: none;
+}
+.navigation ul li a:hover {
+    color: #CECECE;
+    text-decoration: underline;
+}
+
+/* Регистрация/вход конец */
+
+
+/* To do list */
+
+
+.Sidebar {
+
+    position: absolute;
+    width: 240px;
+    height: 752px;
+    left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+/* Темная тема/Карточка */
+
+background: #2C3440;
+    
+    filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.25));
+
+}
+
+.Category {
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: static;
+width: 212px;
+height: 283px;
+left: auto;
+top: 0x;
+
+}
+.Category ul li {
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 30px 0px;
+
+
+list-style-type: none;
+font-family: Nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+letter-spacing: 0.025em;
+
+}
+
+.Category ul lh {
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+/* identical to box height */
+
+    letter-spacing: 0.03em;
+
+/* Акцент */
+
+    color: #29A19C;
+    
+}
+
+.Category ul li a {
+    color: #F9F9F9;
+    text-decoration: none;
+    
+}
+.Category .add a{
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 30px 0px;
+    color: #29A19C;
+    text-decoration: none;
+    
+}
+.Category li a:hover {
+
+    text-decoration: underline;
+}
+
+.icon {
+
+    width: 16px;
+    padding-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.Category .out {
+
+    margin-top: 60px;
+}
+
