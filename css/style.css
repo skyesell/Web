@@ -100,7 +100,7 @@ html, body {
     
 }
 
-.RegContainer .Text {
+.Text {
     
     display: flex;
     flex-direction: row;
@@ -131,7 +131,7 @@ html, body {
 }
 
 
-.RegContainer .Input {
+.Input {
     
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@ html, body {
 
 }
 
-.RegContainer .Input input {
+.Input input {
     
     display: flex;
     flex-direction: row;
@@ -176,7 +176,7 @@ html, body {
 
 }
 
-.RegContainer .Input button {
+.Input button {
     
     display: flex;
     flex-direction: row;
@@ -899,27 +899,159 @@ h3 {
     
 }
 
-.Menu {
-    
-    position: static;
+.show {display: block;}
+
+
+.Menubutton {
+    position: relative;
     width: 24px;
     height: 24px;
-    left: 270px;
+    left: 1345px;
     top: 10px;
-    
-    /* Темная тема/Карточка */
+    padding: 3px;
     
     background: #2C3440;
     /* Smooth shadow */
     
     box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);
     border-radius: 5px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 35px 20px;
+
+}
+.Buttonicon {
+    display: flex;
+    align-self:center;
+}
+
+
+
+.Accinfo {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    
+    position: static;
+    width: 510px;
+    height: 408px;
+    left: 0px;
+    top: 0px;
+    
+    
+    /* Темная тема/Карточка */
+    
+    background: #2C3440;
+    /* Тень */
+    
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
     
     /* Inside Auto Layout */
     
     flex: none;
-    order: 2;
+    order: 0;
     flex-grow: 0;
-    margin: 0px 20px;
+    margin: 30px 0px;
+}
 
+.Information {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    flex-wrap: wrap;
+    
+
+    position: static;
+    width: 300px;
+    height: 368px;
+    left: 220px;
+    top: 10px;
+
+}
+
+.Photo {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: static;
+    width: 150px;
+    height: 176px;
+    left: 20px;
+    top: 10px;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 20px 20px;
+}
+
+.Usericoninfo {
+    
+    position: static;
+    width: 150px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    
+    background: url(.png);
+    border: 1px solid #F0F0F0;
+    border-radius:100%;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+  
+}
+
+.Information .Input  {
+
+    margin: 50px 0px;
+
+}
+
+.Information a {
+    
+    position: static;
+    width: 100px;
+    height: 16px;
+    left: 33px;
+    top: 160px;
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    /* Акцент */
+    
+    color: #29A19C;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 30px;
+
+    
+    
 }
