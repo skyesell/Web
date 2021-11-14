@@ -1,0 +1,73 @@
+.ContCirc { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 100px;
+    height: 142px;
+    left: 0px;
+    top: 0px;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    /* Темная тема/Белый */
+    
+    color: #F9F9F9;
+   
+
+}
+.Circle {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    
+    /* Темная тема/Карточка */
+    
+    background: #2C3440;
+    /* Акцент */
+    
+    border: 1px solid #29A19C;
+    box-sizing: border-box;
+    border-radius: 200px;
+    
+}
+
+.ContCirc h4 {
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+    
+    /* Акцент */
+    
+    color: #29A19C;
+    
+}

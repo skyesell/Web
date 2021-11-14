@@ -4,7 +4,6 @@ import logo from './logo.svg';
 
 export default function Logo() {
     return (
-
             <section className="logoContainer">
                 <section className="logo">
                  <img src={logo} alt="logo"/>   

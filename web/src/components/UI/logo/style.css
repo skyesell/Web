@@ -38,8 +38,7 @@
     flex-grow: 0;
     margin: 0px 0px;
 }
-
-.logoText {
+.logoText h2 {
     
     position: static;
     left: 53.78%;
@@ -50,8 +49,8 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 24px;
     letter-spacing: 0.03em;
     
     /* Акцент */
@@ -61,7 +60,7 @@
     /* Inside Auto Layout */
     
     flex: none;
-    flex-wrap: wrap;
+
     order: 1;
     flex-grow: 0;
     margin: 0px 10px;
