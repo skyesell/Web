@@ -20,21 +20,21 @@ export default function Sidebar() {
         <form class="Category">
             <ul>
                 <lh>Категории</lh>
-                <li><img class="icon" src={home} alt = "Error"/><Link to="#">Дом</Link></li>
-                <li><img class="icon" src={family} alt = "Error"/><Link to="#">Семья</Link></li>
-                <li><img class="icon" src={work} alt = "Error"/><Link to="#">Работа</Link></li>
-                <li><img class="icon" src={sport} alt = "Error"/><Link to="#">Спорт</Link></li>
-                <li class="add"><img class="icon" src={add} alt = "Error"/><Link to="#">Добавить</Link></li>
+                <li><img class="icon" src={home} alt = "Error"/><Link to="/todo">Дом</Link></li>
+                <li><img class="icon" src={family} alt = "Error"/><Link to="/todo">Семья</Link></li>
+                <li><img class="icon" src={work} alt = "Error"/><Link to="/todo">Работа</Link></li>
+                <li><img class="icon" src={sport} alt = "Error"/><Link to="/todo">Спорт</Link></li>
+                <li class="add"><img class="icon" src={add} alt = "Error"/><Link to="/todo">Добавить</Link></li>
             </ul>
 
             <ul>
                 <lh>Данные</lh>
-                <li><img class="icon" src={stat} alt = "Error"/><Link to="#">Статистика</Link></li>
-                <li><img class="icon" src={trend} alt = "Error"/><Link to="#">Сравнить</Link></li>
+                <li><img class="icon" src={stat} alt = "Error"/><Link to="/todo">Статистика</Link></li>
+                <li><img class="icon" src={trend} alt = "Error"/><Link to="/todo">Сравнить</Link></li>
             </ul>
 
             <ul>
-                <li><img class="icon" src={out} alt = "Error"/><Link to="#">Выход</Link></li>
+                <li><img class="icon" src={out} alt = "Error"/><Link to="/">Выход</Link></li>
             </ul>
         </form>
     </section>

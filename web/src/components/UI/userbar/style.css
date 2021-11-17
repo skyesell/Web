@@ -1,0 +1,55 @@
+.Usericon {
+    
+    position: relative;
+    width: 42px;
+    height: 42px;
+    top: 0px;
+    
+    background: url();
+    border-radius: 50%;
+    border: 1px solid #F0F0F0;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px;
+    
+}
+.User {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 294px;
+    height: 44px;
+    left: 1040px;
+    top: 20px;
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    /* Темная тема/Белый */
+    
+    color: #F9F9F9;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+    
+}
+
+.User a {
+    color: #29A19C;
+    text-decoration: none;
+}

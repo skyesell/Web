@@ -10,7 +10,7 @@ export default function Navigation() {
                 © copy copyright 2021
                 </li>
                 <li>
-                    <Link to ="https://e-kontur.ru/enquiry/1318/privacy"  target="_blank">Политика конфиденциальности</Link>
+                    <Link to ="/todo">Политика конфиденциальности</Link>
                 </li>
             </ul>
         </div>

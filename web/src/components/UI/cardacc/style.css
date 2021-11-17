@@ -1,0 +1,155 @@
+.Accinfo {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    
+    position: static;
+    width: 510px;
+    height: 408px;
+    left: 0px;
+    top: 0px;
+    
+    
+    /* Темная тема/Карточка */
+    
+    background: #2C3440;
+    /* Тень */
+    
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 30px 0px;
+}
+.Input {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: static;
+    width: 310px;
+    height: 400px;
+    left: 20px;
+    top: 65px;
+
+}
+.Information {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    flex-wrap: wrap;
+    
+
+    position: static;
+    width: 300px;
+    height: 368px;
+    left: 220px;
+    top: 10px;
+
+}
+
+.Photo {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: static;
+    width: 150px;
+    height: 176px;
+    left: 20px;
+    top: 10px;
+    
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 20px 20px;
+}
+
+.Usericoninfo {
+    
+    position: static;
+    width: 150px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+    
+    background: url();
+    border: 1px solid #F0F0F0;
+    border-radius:100%;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+  
+}
+
+
+.Information a {
+    
+    position: static;
+    width: 100px;
+    height: 16px;
+    left: 33px;
+    top: 160px;
+    
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    
+    /* Акцент */
+    
+    color: #29A19C;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 30px;
+
+    
+    
+}
+
+.Information h3 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    letter-spacing: 0.02em;
+    
+    color: #F9F9F9;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 5px 10px;
+    }
