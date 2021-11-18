@@ -1,0 +1,99 @@
+.modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+
+  }
+  
+  .modal.enter-done {
+    opacity: 1;
+    pointer-events: visible;
+  }
+  
+  .modal.exit {
+    opacity: 0;
+  }
+  
+  .modal-content {
+    width: 500px;
+    background-color: #2C3440;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-200px);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid #29A19C;
+  }
+  
+  .modal.enter-done .modal-content {
+    transform: translateY(0);
+  }
+  
+  .modal.exit .modal-content {
+    transform: translateY(-200px);
+  }
+  
+  .modal-header,
+  .modal-footer {
+    padding: 0px 10px;
+  }
+  
+  .modal-title {
+
+    display: flex;
+    margin: 10px;
+    padding: 10px 0px 0px 0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    /* Темная тема/Белый */
+    
+    color: #F9F9F9;
+    
+  }
+  
+  .modal-body {
+    padding: 0px 20px;
+    
+  }
+  
+ .modal input {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    
+    position: static;
+    width: 460px;
+    height: 35px;
+    
+    border: 1px solid #29A19C;
+    background-color: #2C3440;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 8px;
+    
+    /* Inside Auto Layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 15px 0px;
+
+    outline: none;
+  }

@@ -40,6 +40,7 @@
     height: 400px;
     left: 20px;
     top: 65px;
+    color: rgb(255, 255, 255);
 
 }
 .Information {
@@ -106,6 +107,7 @@
 .Information a {
     
     position: static;
+    top: 20px;
     width: 100px;
     height: 16px;
     left: 33px;
