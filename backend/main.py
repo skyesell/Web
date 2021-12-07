@@ -3,6 +3,8 @@ from tortoise.contrib.fastapi import register_tortoise
 from fastapi import FastAPI
 
 from db.users.endpoints import user_router
+from db.tasks.endpoints import tasks_router
+from db.facts.endpoints import facts_router
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -21,6 +23,10 @@ app.add_middleware(
 )
 
 app.include_router(user_router, prefix="/users", tags=["Пользователи"])
+
+app.include_router(tasks_router, prefix="/tasks", tags=["Задачи"])
+
+app.include_router(facts_router)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
