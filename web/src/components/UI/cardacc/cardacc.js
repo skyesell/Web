@@ -1,28 +1,50 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import Button from '../button/button';
 import Input from '../input'
 import user from '../../img/icon/user.png';
 import './style.css';
 
-import { Link } from 'react-router-dom';
+import {changeUserName, getMe} from "../../../api/permission";
 
 export default function Cardacc() {
+
+    const [userName, setUserName] = useState('')
+    const [userAvatar, setUserAvatar] = useState(user)
+
+    useEffect(() => {
+        getMe()
+            .then(({name, avatar}) => {
+                setUserName(name)
+                if (avatar)
+                    setUserAvatar(avatar.url)
+            })
+    }, []);
+
+    const handleEmailChange = event => setUserName(event.target.value)
+    const handleEmailClick = () => {
+        changeUserName(userName)
+            .then(() => {})
+    }
+
+
     return (
         <div>
             <div className="Accinfo">
                 <div className="Information">
                     <figure className="Photo">
-                        <img className="Usericoninfo" src={user} alt="Error"/>
-                        <Link to="/">Изменить фото</Link>
+                        <img className="Usericoninfo" src={userAvatar} alt="Error"/>
                     </figure>
-                    <div class="Input">
+                    <div className="Input">
                         <h3>Ваш никнейм</h3>
-                        <Input name="Никнейм"/>
-                        <h3>Изменить email</h3>
-                        <Input name="E-mail"/>
-                        <h3>Изменить пароль</h3>
-                        <Input name="Пароль"/>
-                        <Button name="Сохранить изменения"/>
+                        <Input
+                            name={"name"}
+                            placeholder={userName}
+                            onChange={handleEmailChange}
+                        />
+                        <Button
+                            name="Сохранить изменения"
+                            onClick={handleEmailClick}
+                        />
                     </div>
                 </div>
             </div>

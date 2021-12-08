@@ -12,6 +12,9 @@ class Status(PydanticModel):
     message: str
 
 
+class PutName(PydanticModel):
+    name: str
+
 class UserOrmSchema(PydanticModel):
     class Config:
         orig_model = UserModel

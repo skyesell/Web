@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css';
-import { Link } from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import Logo from '../../UI/logo';
 import home from '../../img/icon/home.svg';
 import family from '../../img/icon/family.svg';
@@ -10,9 +10,18 @@ import add from '../../img/icon/add.svg';
 import stat from '../../img/icon/stat.svg';
 import trend from '../../img/icon/trend.svg';
 import out from '../../img/icon/out.svg';
+import {logout} from "../../../api/auth";
 
 
 export default function Sidebar() {
+
+    const history = useHistory()
+
+    const handleLogout = () => {
+        logout()
+            .then(() => history.push('/'))
+    }
+
     return (
         <section class="Sidebar">
             <Logo />
@@ -34,7 +43,7 @@ export default function Sidebar() {
             </ul>
 
             <ul>
-                <li><img class="icon" src={out} alt = "Error"/><Link to="/">Выход</Link></li>
+                <li><img class="icon" src={out} alt = "Error" onClick={handleLogout}/><Link to="/">Выход</Link></li>
             </ul>
         </form>
     </section>
