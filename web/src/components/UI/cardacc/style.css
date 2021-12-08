@@ -7,7 +7,7 @@
     
     position: static;
     width: 510px;
-    height: 408px;
+    height: 208px;
     left: 0px;
     top: 0px;
     
@@ -37,7 +37,7 @@
     
     position: static;
     width: 310px;
-    height: 400px;
+    height: 200px;
     left: 20px;
     top: 65px;
     color: rgb(255, 255, 255);
@@ -89,8 +89,7 @@
     height: 150px;
     left: 0px;
     top: 0px;
-    
-    background: url();
+
     border: 1px solid #F0F0F0;
     border-radius:100%;
     
